@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAVA · Residential Vastu Analysis</title>
+<meta name="theme-color" content="#4b2e83">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top">
+  <button id="menuBtn" aria-label="Menu">☰</button>
+  <div class="brand"><b>RAVA</b> <span id="brandSub"></span></div>
+  <input id="search" type="search" placeholder="Search the whole course…">
+  <span id="progressPill" class="pill"></span>
+  <button id="langBtn" class="pill lang">हिंदी</button>
+</header>
+<div id="layout">
+  <nav id="side"></nav>
+  <main id="main"></main>
+</div>
+<footer id="disc"></footer>
+<script src="content.js"></script>
+<script src="app.js"></script>
+<script>if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); }); }</script>
+</body>
+</html>
